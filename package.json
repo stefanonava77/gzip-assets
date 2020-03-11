@@ -1,6 +1,6 @@
 {
   "name": "gzip-assets",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Gzip compression on css and js",
   "main": "index.js",
   "scripts": {

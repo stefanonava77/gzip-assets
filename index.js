@@ -10,15 +10,17 @@ const runCompression = function (dirs) {
         console.log('Compress file: ' + file);
         var command = "mv " + dir + '/' + file + " " + dir + '/' + name;
         execCommand(command);
-        const fileContents = fs.createReadStream(dir + '/' + name);
-        const writeStream = fs.createWriteStream(dir + '/' + file);
-        const zip = zlib.createGzip();
-        fileContents
-          .pipe(zip)
-          .on('error', err => console.error(err))
-          .pipe(writeStream)
-          .on('error', err => console.error(err));
-        fs.unlinkSync(dir + '/' + name);
+        setTimeout(function () {
+          const fileContents = fs.createReadStream(dir + '/' + name);
+          const writeStream = fs.createWriteStream(dir + '/' + file);
+          const zip = zlib.createGzip();
+          fileContents
+            .pipe(zip)
+            .on('error', err => console.error(err))
+            .pipe(writeStream)
+            .on('error', err => console.error(err));
+          fs.unlinkSync(dir + '/' + name);
+        }, 500);
       }
     })
   });

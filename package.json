@@ -9,7 +9,7 @@
   "author": "Stefano Nava",
   "license": "ISC",
   "keywords": [
-    "gzip", "css", "js"
+    "gzip", "css", "js", "asset"
   ],
   "homepage": "https://github.com/stefanonava77/gzip-assets"
 }

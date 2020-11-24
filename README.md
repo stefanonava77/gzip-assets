@@ -3,6 +3,8 @@
 ## Description
 Utility plugin for gzip using pure javascript.
 
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
+
 ## Installation
 
 Using npm:

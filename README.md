@@ -1,5 +1,8 @@
 # Gzip Assets compression
 
+## Description
+Utility plugin for gzip using pure javascript.
+
 ## Installation
 
 Using npm:
